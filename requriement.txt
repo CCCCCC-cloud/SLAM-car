@@ -1,0 +1,5 @@
+pyserial>=3.5
+numpy>=1.21.0,<2.4.0
+matplotlib>=3.5.0,<3.11.0
+scipy>=1.7.0,<1.17.0
+breezyslam>=0.1
