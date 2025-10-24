@@ -472,7 +472,7 @@ def main():
     # 初始化地图
     occupancy_grid = OccupancyGrid(GRID_SIZE_PIXELS, WORLD_SIZE_METERS)
     position_state = [0, 0, 0]
-
+    occupancy_grid.update_robot_pose(0.0, 0.0, 0.0)
     # 初始化任务控制器
     robot_wheels = WheelConfig(
         radius_mm=args.wheel_radius * 1000,
