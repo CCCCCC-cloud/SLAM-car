@@ -28,7 +28,7 @@ from planner import (MissionController, StatusReport, Phase,
 # 导入改进版通信模块
 import sys
 sys.path.insert(0, '/home/claude')
-from btlink_improved import BTLink, WheelGeom, EncoderFrame, LidarFrame, build_scan360
+from btlink import BTLink, WheelGeom, EncoderFrame, LidarFrame, build_scan360
 
 # 地图配置
 GRID_SIZE_PIXELS = 800
@@ -442,12 +442,7 @@ def main():
     args = parser.parse_args()
 
     print("\n" + "="*100)
-    print("🔧 改进版机器人导航系统")
-    print("="*100)
-    print("核心改进:")
-    print("  ✅ 编码器积分累加（10ms采样）")
-    print("  ✅ 双帧分离传输（编码器+雷达）")
-    print("  ✅ SLAM使用完整运动周期增量")
+    print("🔧 机器人导航系统")
     print("="*100 + "\n")
 
     # 初始化日志
